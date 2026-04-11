@@ -283,9 +283,29 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: var(--dairy);
+  padding-top: 72px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mobile-modal-btn {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 0;
+  border: 1 px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background-color: var(--cornflower);
+  box-shadow:
+    0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  fill: var(--navy-blue);
 }
 /* ====== /MOBILE HEADER STYLES ========== */
 
+/* ====== TABLET HEADER STYLES =========== */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -299,9 +319,11 @@ img {
   .contact-list {
     display: flex;
   }
+  .mobile-modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
-/* ====== TABLET HEADER STYLES =========== */
-
 /* ====== /TABLET HEADER STYLES ========== */
 
 @media screen and (min-width: 1158px) {
