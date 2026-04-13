@@ -830,10 +830,132 @@ img {
 .team {
   background-color: var(--cloud);
 }
+
+.team-list {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.list-item {
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: var(--white);
+}
+
+.list-item {
+  margin-bottom: 72px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.team-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--slate);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  fill: var(--cloud);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--ocean);
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
+
 /* ========== /MOBILE OUR TEAM STYLES ======= */
 
 /* ========== TABLET OUR TEAM STYLES ======== */
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 64px;
+    flex-wrap: wrap;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .list-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+}
 /* ========= /TABLET OUR TEAM STYLES ======== */
 
 /* ========== DESKTOP OUR TEAM STYLES ======= */
+@media screen and (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 /* ========= /DESKTOP OUR TEAM STYLES ======= */
+
+/* ========== MOBILE PORTFOLIO STYLES ======= */
+.portfolio-item {
+  margin-bottom: 48px;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+/* ==========/MOBILE PORTFOLIO STYLES ======= */
+
+/* ========== TABLET PORTFOLIO STYLES ======= */
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    margin-bottom: 0;
+  }
+}
+/* ========= /TABLET PORTFOLIO STYLES ======= */
+
+/* ========= DESKTOP PORTFOLIO STYLES ======= */
+/* ======== /DESKTOP PORTFOLIO STYLES ======= */
