@@ -798,7 +798,7 @@ img {
     flex-wrap: wrap;
   }
 
-  .features-list-item {
+  .features-list .features-list-item {
     width: calc((100% - 24px) / 2);
     margin-bottom: 0;
   }
@@ -1287,6 +1287,10 @@ img {
 
   .subscribe-form-input {
     width: 264px;
+  }
+
+  .subscribe-form-btn {
+    margin-top: 0;
   }
 
 }
