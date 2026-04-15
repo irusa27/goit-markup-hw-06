@@ -1108,7 +1108,7 @@ img {
 .footer-logo {
   display: block;
   text-align: center;
-  font: var(--second-family);
+  font-family: var(--second-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
