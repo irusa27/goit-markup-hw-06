@@ -250,7 +250,7 @@ img {
 }
 
 .mobile-menu-contacts-link:hover,
-.mobile-menu-contacts-list-link:focus {
+.mobile-menu-contacts-link:focus {
   color: var(--iris);
 }
 
@@ -798,6 +798,7 @@ img {
 
   .features-list-item {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 
   .features-list-title {
