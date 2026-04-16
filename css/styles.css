@@ -790,7 +790,7 @@ img {
 /* ====== /MOBILE OUR FEATURES STYLES ====== */
 
 /* ====== TABLET OUR FEATURES STYLES ====== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157) {
   .features-list {
     display: flex;
     column-gap: 24px;
@@ -818,6 +818,7 @@ img {
   }
 
   .features-list {
+    display: flex;
     gap: 24px;
     flex-wrap: nowrap;
   }
